@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mirror Squid Game</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    <script
+        src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
+
+    <script src="./components/mirror1.js"></script>
+</head>
+
+<body>
+    <a-scene id = "scene"  >
+
+        <a-sky id="sky" src="./assets/images/Background.png"></a-sky>
+
+        <!-- <a-entity id="river" geometry="primitive: plane" material="color: blue"
+          position="-10 0 0" sound="src: url(./assets/images/background.mp3); autoplay: true; loop: true" ></a-entity>
+ -->
+
+        <a-entity mirror></a-entity>
+        <!-- <a-plane position="1.5 0 -4" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="-1.5 0 -7" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="1.5 0 -7" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="-1.5 0 -10" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="1.5 0 -10" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-p  lane>
+        <a-plane position="-1.5 0 -13" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="1.5 0 -13" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="-1.5 0 -16" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="1.5 0 -16" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="-1.5 0 -19" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="1.5 0 -19" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="-1.5 0 -22" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="1.5 0 -22" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="-1.5 0 -25" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="1.5 0 -25" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="-1.5 0 -28" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="1.5 0 -28" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="-1.5 0 -31" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane position="1.5 0 -31" rotation="-90 0 0" width="2" height="2" color="#7BC8A4" shadow></a-plane> -->
+
+
+        <a-entity position="0 1 0" spe-particles="
+                color: yellow, red, cyan, black;
+                distribution: sphere;
+                randomize-velocity: true;
+                radius: 200,
+                velocity-spread: 15;
+                drag: 1;
+                max-age: 2;
+                duration: -1;
+                blending: additive,
+                active-multiplier: 200000;
+                size: 2, 2, 2, 0
+                "></a-entity>
+
+
+    </a-scene>
+
+</body>
+
+</html>
